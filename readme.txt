@@ -40,3 +40,8 @@ IDEA Community(社区版)+maven创建Java web项目并配置Tomcat全过程
         Tomcat 会输出 URL ( 类似 http://localhost:8080/hello-servlet
         在浏览器中输入 http://localhost:8080/hello-servlet 访问项目的默认页面 index.jsp
             输入 http://localhost:8080/hello-servlet/helloServlet 即可得到 "Hello, Servlet!"
+
+其他插件
+    JRebel and XRebel 热部署插件
+    配合 Smart Tomcat 使用，可以修改 java 文件之后即时生效在浏览器中，不需要 restart Tomcat server.
+    但是该插件需要收费, 暂时没有进一步考察
