@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Servlet Request</title>
+    <style type="text/css">
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Servlet Parameter 测试</h1>
+    <h2>get请求表单</h2>
+    <form action="http://localhost:8080/hello-servlet/ParameterServlet" method="get" target="hidden_div">
+        用户名：<input type="text" name="username" value="xiaoming"><br />
+        密码：<input type="password" name="password" value="123456"><br />
+        自我介绍：<textarea row="20" col="10" name="intro">嘻嘻嘻</textarea> <br/>
+        兴趣爱好：<input type="checkbox" name="hobby" value="cpp" checked="checked">C++后端开发
+        <input type="checkbox" name="hobby" value="java" checked="checked">Java后端开发
+        <input type="checkbox" name="hobby" value="js" checked="checked">JavaScript前端开发<br />
+        <input type="submit">
+    </form>
+    
+    <br />
+    <h2>post请求表单</h2>
+    <form action="http://localhost:8080/hello-servlet/ParameterServlet" method="post" target="hidden_div">
+        用户名：<input type="text" name="username" value="DouMiao"><br/>
+        密码：<input type="password" name="password" value="123456"><br/>
+        自我介绍：<input type="text" name="intro" value="哈哈哈"><br />
+        兴趣爱好：<input type="checkbox" name="hobby" value="cpp" checked="checked">C++后端开发
+        <input type="checkbox" name="hobby" value="java" checked="checked">Java后端开发
+        <input type="checkbox" name="hobby" value="js" checked="checked">JavaScript前端开发<br/>
+        <input type="submit">
+    </form>
+    
+    <iframe class="hidden" name="hidden_div"></iframe> <!--设置为表单的 target, form 提交之后不会跳转 -->
+</body>
+</html>
