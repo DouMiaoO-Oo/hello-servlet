@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>session样例</title>
+    <base href="http://localhost:8080/hello-servlet/">
+    <style type="text/css">
+        .hide {
+            display:none;
+        }
+        iframe{
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<iframe name="target"></iframe>
+<ul>
+    <li><a href="SessionServlet?action=createOrGetSession" target="target">Session的创建和获取（id号、是否为新创建）</a></li>
+    <li><a href="SessionServlet?action=setAttribute" target="target">Session域数据的存储</a></li>
+    <li><a href="SessionServlet?action=getAttribute" target="target">Session域数据的获取</a></li>
+    <li>Session的存活</li>
+    <li>
+        <ul>
+            <li><a href="SessionServlet?action=defaultLife" target="target">Session的默认超时及配置</a></li>
+            <li><a href="SessionServlet?action=life3" target="target">Session3秒超时销毁</a></li>
+            <li><a href="SessionServlet?action=deleteNow" target="target">Session马上销毁</a></li>
+        </ul>
+    </li>
+<!--    <li><a href="" target="target">浏览器和Session绑定的原理: 通过cookie下发</a></li>-->
+</ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookie样例</title>
+    <base href="http://localhost:8080/hello-servlet/">
+    <style type="text/css">
+        .hide {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+
+<iframe class="hide" name="hidden_iframe"></iframe>
+<!--<a href="/CookieServlet?action=createCookie" target="hidden_iframe">createCookie</a><br />-->  <!-- 这样写就变成请求 http://localhost:8080/CookieServlet?action=createCookie -->
+<a href="CookieServlet?action=createCookie" target="_blank">createCookie</a><br />
+<a href="CookieServlet?action=getCookie" target="_blank">getCookie</a><br />
+<a href="CookieServlet?action=updateCookie" target="_blank">updateCookie</a><br />
+Cookie的存活周期:
+<ul>
+    <li><a href="CookieServlet?action=defaultLife" target="_blank">defaultLife: Cookie的默认存活时间（会话）</a></li>
+    <li><a href="CookieServlet?action=life3600" target="_blank">life3600: Cookie存活3600秒（1小时）</a></li>
+    <li><a href="CookieServlet?action=deleteNow&keyName=life3600" target="_blank">deleteNow: 立即删除life3600</a></li>
+</ul>
+<li><a href="CookieServlet?action=testPath" target="_blank">Cookie的路径设置(访问http://localhost:8080/hello-servlet/abc/session_cookie.html才能正确显示出 pathCookie</a></li>
+
+</body>
+</html>

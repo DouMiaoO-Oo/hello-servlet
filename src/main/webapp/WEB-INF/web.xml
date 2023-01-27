@@ -41,4 +41,9 @@
     <servlet-name>HelloServletInterface</servlet-name> <!-- Servlet 别名  -->
     <url-pattern>/HelloServletInterface</url-pattern>
   </servlet-mapping>
+
+  <!--表示当前web 工程。创建出来的所有Session 默认是 30 分钟超时时长. Tomcat 默认设置为 30 分钟-->
+<!--  <session-config>-->
+<!--    <session-timeout>30</session-timeout>-->
+<!--  </session-config>-->
 </web-app>
