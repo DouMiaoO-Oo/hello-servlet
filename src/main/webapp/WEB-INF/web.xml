@@ -42,6 +42,15 @@
     <url-pattern>/HelloServletInterface</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>KaptchaServlet</servlet-name>
+    <servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>KaptchaServlet</servlet-name>
+    <url-pattern>/kaptcha.jpg</url-pattern>
+  </servlet-mapping>
+
   <!--表示当前web 工程。创建出来的所有Session 默认是 30 分钟超时时长. Tomcat 默认设置为 30 分钟-->
 <!--  <session-config>-->
 <!--    <session-timeout>30</session-timeout>-->

@@ -39,6 +39,13 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.google.code</groupId>
+      <artifactId>kaptcha</artifactId>
+      <version>2.3.2</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/kaptcha-2.3.2.jar</systemPath>
+    </dependency>
   </dependencies>
 
   <build>

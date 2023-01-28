@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+    <style type="text/css">
+        iframe {
+            width: 500px;
+            height: 200px;
+        }
+        img {
+            width: 100px;
+            height: 28px;
+        }
+        #code_input {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <iframe name="target"></iframe>
+    <form action="http://localhost:8080/hello-servlet/captchaDemo" method="get">
+        验证码：<input type="text" name="captcha" id="code_input">
+        <img src="http://localhost:8080/hello-servlet/kaptcha.jpg" alt="验证码"> <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
