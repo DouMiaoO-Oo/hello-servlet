@@ -45,3 +45,36 @@ IDEA Community(社区版)+maven创建Java web项目并配置Tomcat全过程
     JRebel and XRebel 热部署插件
     配合 Smart Tomcat 使用，可以修改 java 文件之后即时生效在浏览器中，不需要 restart Tomcat server.
     但是该插件需要收费, 暂时没有进一步考察
+
+代码demo测试url
+    Servlet 样例：
+        http://localhost:8080/hello-servlet/helloServlet
+        http://localhost:8080/hello-servlet/HelloServletInterface
+        http://localhost:8080/hello-servlet/HelloContextServlet
+
+    Request 相关：
+        http://localhost:8080/hello-servlet/RequestAPIServlet
+        http://localhost:8080/hello-servlet/form.html
+            用于测试 package com.example.request.ParameterServlet
+
+    forward 转发相关
+        http://localhost:8080/hello-servlet/ForwardServlet1
+
+        http://localhost:8080/hello-servlet/a/b/c.html
+        http://localhost:8080/hello-servlet/ForwardStaticHtml
+
+    Response 相关：
+        http://localhost:8080/hello-servlet/ResponseIOServlet
+        http://localhost:8080/hello-servlet/RedirectResponse1
+
+    Session&Cookie
+        http://localhost:8080/hello-servlet/session_cookie.html
+
+    file upload:
+        http://localhost:8080/hello-servlet/index.jsp
+
+    验证码
+        http://localhost:8080/hello-servlet/captcha.html
+
+    Filter:
+        http://localhost:8080/hello-servlet/filter/index.jsp
