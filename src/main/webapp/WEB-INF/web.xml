@@ -51,6 +51,25 @@
     <url-pattern>/kaptcha.jpg</url-pattern>
   </servlet-mapping>
 
+  <filter>
+    <filter-name>Filter1</filter-name>
+    <filter-class>com.example.filter.Filter1</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter1</filter-name>
+    <url-pattern>/filter/*</url-pattern>
+<!--    <url-pattern>/manager/*</url-pattern>-->  <!-- 可以匹配多个url -->
+  </filter-mapping>
+
+  <filter>
+    <filter-name>Filter2</filter-name>
+    <filter-class>com.example.filter.Filter2</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter2</filter-name>
+    <url-pattern>/filter/*</url-pattern>
+  </filter-mapping>
+
   <!--表示当前web 工程。创建出来的所有Session 默认是 30 分钟超时时长. Tomcat 默认设置为 30 分钟-->
 <!--  <session-config>-->
 <!--    <session-timeout>30</session-timeout>-->
